@@ -11,6 +11,7 @@ function showMessage(text) {
     messageText.innerHTML = text;
     box.classList.remove('hidden');
 }
+
 function closeMessage() {
     document.getElementById('messageBox').classList.add('hidden');
 }
