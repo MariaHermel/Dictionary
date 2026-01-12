@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+        <h1>Dictionary</h1>
+        <div class="container">
+            <div class="containerSecondary">
+                <input type = "text" id="wordInput" placeholder="Enter a word" />
+                <button id="registerButton">
+                    Register
+                </button>
+                
+            </div>
+            <div class="containerSecondary">
+                <input type = "text" id="wordSearch" placeholder="Search a word" />
+                <button id="searchButton">
+                    Search
+                </button>
+            </div>
+        </div>
+        <div class = "wordListContainer">
+            <h2>Registered Words</h2>
+            <ul id="wordList">
+            </ul>
+        </div>
+    </div>
+    <div id="messageBox" class="message-box hidden">
+      <p id="messageText"></p>
+      <button onclick="closeMessage()">OK</button>
+    </div>
+        <script src="main.js"></script>
+    </body>
+</html>
